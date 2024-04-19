@@ -8,3 +8,6 @@ devoluciones.info()
 devoluciones=devoluciones.fillna({'DOC_ANT':'--', 'CVE_PEDI':'--', 'FECHA_CANCELA':'--','CVE_VEND':'--'})
 
 print(devoluciones.isnull().sum())
+
+#Convertir DataFrame a CSV
+devoluciones.to_csv('devoluciones.csv')

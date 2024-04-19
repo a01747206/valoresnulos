@@ -8,3 +8,6 @@ clientes.info()
 clientes=clientes.fillna({'RFC':'--','NOMBRE':'--'})
 
 print(clientes.isnull().sum())
+
+#Convertir DataFrame a CSV
+clientes.to_csv('clientes.csv')

@@ -8,3 +8,6 @@ notas_credito.info()
 notas_credito=notas_credito.fillna({'CVE_PEDI':'--','FECHA_CANCELA':'--','CVE_VEND':'--'})
 
 print(notas_credito.isnull().sum())
+
+#Convertir DataFrame a CSV
+notas_credito.to_csv('notas_credito.csv')
